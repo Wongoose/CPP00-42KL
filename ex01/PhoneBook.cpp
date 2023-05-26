@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   PhoneBook.cpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zwong <zwong@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/26 12:57:14 by zwong             #+#    #+#             */
+/*   Updated: 2023/05/26 12:57:14 by zwong            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "PhoneBook.hpp"
 
 PhoneBook::PhoneBook() { this->current_index_ = 0; }
@@ -55,7 +67,7 @@ int	PhoneBook::add_contact() {
 }
 
 std::string my_truncate(std::string str) {
-  if (str.length() > 15) return str.substr(0, 14) + ".";
+  if (str.length() > 10) return str.substr(0, 9) + ".";
   return str;
 }
 
